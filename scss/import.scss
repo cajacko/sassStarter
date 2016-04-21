@@ -1,10 +1,18 @@
+// External imports
 @import '../node_modules/font-awesome/css/font-awesome'; // Update with your actual path to the node_modules directory
 @import '../node_modules/normalize.css/normalize'; // Update with your actual path to the node_modules directory
-@import 'global_variables';
+@import 'variables'; // Variables need to be imported before mq, so mq uses our breakpoints
 @import '../node_modules/sass-mq/mq'; // Update with your actual path to the node_modules directory
-@import 'global_mixins';
+
+@import 'mixins'; // Enough said
+
+// Core css
+@import 'globals';
+@import 'type';
+@import 'media';
+@import 'buttons';
 @import 'forms';
-@import 'general';
+
+// Components
 @import 'site_header';
-@import 'page';
 @import 'site_footer';

@@ -1,0 +1,18 @@
+// Define the breakpoints nad their associated names. Uses the mq sass plugin: https://github.com/sass-mq/sass-mq
+$mq-breakpoints: (
+  mobile:  425px,
+  tablet: 768px,
+  laptop: 1024px,
+);
+
+// Fonts
+$font-family--default: 'Lato', Helvetica, sans-serif;
+$line-height--default: 1.5;
+
+// Font sizes
+$font-size--default: 16px;
+$font-size--small: .9rem;
+$font-size--x-small: .8rem;
+$font-size--large: 1.1rem;
+$font-size--x-large: 1.5rem;
+$font-size--xx-large: 2rem;
