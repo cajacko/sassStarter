@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/cajacko/sassStarter#readme",
   "dependencies": {
+    "font-awesome": "^4.6.1",
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.0"
+    "gulp-sass": "^2.3.0",
+    "normalize.css": "^4.1.1",
+    "sass-mq": "^3.2.9"
   }
 }
