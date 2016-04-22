@@ -1,0 +1,9 @@
+rules:
+  no-vendor-prefix:
+    - 0
+  no-misspelled-properties:
+  - 1
+  -
+    'extra-properties':
+      - '-webkit-overflow-scrolling'
+      - '-moz-osx-font-smoothing'
