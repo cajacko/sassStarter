@@ -1,0 +1,57 @@
+// Style placeholder text
+@mixin placeholder {
+  &::-webkit-input-placeholder { // WebKit, Blink, Edge
+    @content;
+    opacity:  1;
+  }
+
+  &:-moz-placeholder { // Mozilla Firefox 4 to 18
+    @content;
+    opacity:  1;
+  }
+
+  &::-moz-placeholder { // Mozilla Firefox 19+
+    @content;
+    opacity:  1;
+  }
+
+  &:-ms-input-placeholder { // Internet Explorer 10-11
+    @content;
+    opacity:  1;
+  }
+}
+
+// Class used to restrict an element to the defined page width
+@mixin wrap {
+  margin: 0 auto;
+  max-width: $wrap-width;
+}
+
+// Clearfix hack
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// Strip units, to be used to parse rem units into px
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+// display font awesome icon
+@mixin font-awesome($content) {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  content: $content;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+}
